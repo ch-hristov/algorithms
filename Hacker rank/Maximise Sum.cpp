@@ -19,8 +19,7 @@ using namespace std;
 ll maxim(ll a,ll b){
     return a > b ? a : b;
 }
-
-
+    
 int main(){
     int T;
     cin >> T;
@@ -39,9 +38,7 @@ int main(){
             cin >> j;
             arr.pb(j);
         }
-
         ll maxi = -10e9;
-
         ll DP[N][N];
 
         for(int i = 0;i < N;i++){
