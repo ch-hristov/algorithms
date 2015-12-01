@@ -10,24 +10,45 @@
 #define pb(x) push_back(x)
 #define F first
 #define S second
+#define mp(a,b) make_pair(a,b)
+#define pii pair < int,int >
 
 using namespace std;
 
-int main(){
-    int n;
-    scanf("%d",&n);
-    int a[n];
 
-    for(int i = 0;i < n;i++){
-        scanf("%d",&a[i]);
+vector < pii > vect;
+
+double dist(pii a,pii b){
+    double ax = b.F - a.F;
+    double ay = b.S - a.S;
+
+    return sqrt(ax*ax+ay*ay);
+}
+
+double solve(){
+
+}
+
+int main() {
+
+    while(1){
+
+        int N;
+        cin >> N;
+
+        if(N==0)break;
+
+        vect.clear();
+
+        for(int i = 0;i < 2*N;i++){
+            int x, y;
+            cin >> x >> y;
+            vect.pb(mp(x,y));
+        }
+
+        double ans = solve();
+        cout << ans << endl;
     }
-
-    int maximum = 1;
-    int maxi = 0;
-
-
-
-    printf("%d",maximum);
 
     return 0;
 }
