@@ -36,6 +36,7 @@ int main()
 		if (query == "insert") {
 			data.push_back(num);
 			result.push_back(make_pair(query, num));
+			sort_heap(data.rbegin(), data.rend());
 		}
 		if (query == "getMin") {
 
